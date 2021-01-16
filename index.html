@@ -1,0 +1,336 @@
+<!doctype html>
+<!--Quite a few clients strip your Doctype out, and some even apply their own. Many clients do honor your doctype and it can make things much easier if you can validate constantly against a Doctype.-->
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Social Tracing</title>
+
+<!-- Please use an inliner tool to convert all CSS to inline as inpage or external CSS is removed by email clients -->
+<!-- important in CSS is used to prevent the styles of currently inline CSS from overriding the ones mentioned in media queries when corresponding screen sizes are encountered -->
+
+<style type="text/css">
+body {
+	margin: 0;
+}
+body, table, td, p, a, li, blockquote {
+	-webkit-text-size-adjust: none!important;
+	font-family: sans-serif;
+	font-style: normal;
+	font-weight: 400;
+}
+button {
+	width: 90%;
+}
+
+@media screen and (max-width:600px) {
+/*styling for objects with screen size less than 600px; */
+body, table, td, p, a, li, blockquote {
+	-webkit-text-size-adjust: none!important;
+	font-family: sans-serif;
+}
+table {
+	/* All tables are 100% width */
+	width: 100%;
+}
+.footer {
+	/* Footer has 2 columns each of 48% width */
+	height: auto !important;
+	max-width: 48% !important;
+	width: 48% !important;
+}
+table.responsiveImage {
+	/* Container for images in catalog */
+	height: auto !important;
+	max-width: 30% !important;
+	width: 30% !important;
+}
+table.responsiveContent {
+	/* Content that accompanies the content in the catalog */
+	height: auto !important;
+	max-width: 66% !important;
+	width: 66% !important;
+}
+.top {
+	/* Each Columnar table in the header */
+	height: auto !important;
+	max-width: 48% !important;
+	width: 48% !important;
+}
+.catalog {
+	margin-left: 0%!important;
+}
+}
+
+@media screen and (max-width:480px) {
+/*styling for objects with screen size less than 480px; */
+body, table, td, p, a, li, blockquote {
+	-webkit-text-size-adjust: none!important;
+	font-family: sans-serif;
+}
+table {
+	/* All tables are 100% width */
+	width: 100% !important;
+	border-style: none !important;
+}
+.footer {
+	/* Each footer column in this case should occupy 96% width  and 4% is allowed for email client padding*/
+	height: auto !important;
+	max-width: 96% !important;
+	width: 96% !important;
+}
+.table.responsiveImage {
+	/* Container for each image now specifying full width */
+	height: auto !important;
+	max-width: 96% !important;
+	width: 96% !important;
+}
+.table.responsiveContent {
+	/* Content in catalog  occupying full width of cell */
+	height: auto !important;
+	max-width: 96% !important;
+	width: 96% !important;
+}
+.top {
+	/* Header columns occupying full width */
+	height: auto !important;
+	max-width: 100% !important;
+	width: 100% !important;
+}
+.catalog {
+	margin-left: 0%!important;
+}
+button {
+	width: 90%!important;
+}
+}
+</style>
+</head>
+<body yahoo="yahoo">
+<table width="100%"  cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td><table width="600"  align="center" cellpadding="0" cellspacing="0">
+          <!-- Main Wrapper Table with initial width set to 60opx -->
+          <tbody>
+            <tr>
+              <td><table bgcolor="#d0cfcf" class="top" width="48%"  align="left" cellpadding="0" cellspacing="0" style="padding:10px 10px 10px 10px;">
+                  <!-- First header column with Logo -->
+                  <tbody>
+                    <tr>
+                      <td style="font-size: 12px; color:#929292; text-align:center; font-family: sans-serif;">Social Tracing</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <table bgcolor="#d0cfcf" class="top" width="48%"  align="left" cellpadding="0" cellspacing="0" style="padding:10px 10px 10px 10px; text-align:right">
+                  <!-- Second header column with ISSUE|DATE -->
+                  <tbody>
+                    <tr>
+                      <td style="font-size: 12px; color:#929292; text-align:center; font-family: sans-serif;">1/16/2021</td>
+                    </tr>
+                  </tbody>
+                </table></td>
+            </tr>
+            <tr> 
+              <!-- HTML Spacer row -->
+              <td style="font-size: 0; line-height: 0;" height="20"><table width="96%" align="left"  cellpadding="0" cellspacing="0">
+                  <tr>
+                    <td style="font-size: 0; line-height: 0;" height="20">&nbsp;</td>
+                  </tr>
+                </table></td>
+            </tr>
+            <tr> 
+              <!-- HTML IMAGE SPACER -->
+              <td style="font-size: 0; line-height: 0;" height="20"><table align="left"  cellpadding="0" cellspacing="0" >
+                  <tr>
+                    <td ><img src="images/finalbox.png"  alt="" height="" width="100%" class=""></td>
+                  </tr>
+                </table></td>
+            </tr>
+            <tr> 
+              <!-- HTML Spacer row -->
+              <td style="font-size: 0; line-height: 0;" height="20"><table width="96%" align="left"  cellpadding="0" cellspacing="0">
+                  <tr>
+                    <td style="font-size: 0; line-height: 0;" height="20">&nbsp;</td>
+                  </tr>
+                </table></td>
+            </tr>
+            <tr> 
+              <!-- Introduction area -->
+              <td><table width="96%"  align="left" cellpadding="0" cellspacing="0">
+                  <tr> 
+                    <!-- row container for TITLE/EMAIL THEME -->
+                    <td align="center" style="font-size: 32px; font-weight: 300; line-height: 2.5em; color: #929292; font-family: sans-serif;">Social Tracing</td>
+                  </tr>
+                  <tr> 
+                    <!-- row container for Tagline -->
+                    <td align="center" style="font-size: 16px; font-weight:300; color: #929292; font-family: sans-serif;">Automated Social Tracing</td>
+                  </tr>
+                  <tr>
+                    <td style="font-size: 0; line-height: 0;" height="20"><table width="96%" align="left"  cellpadding="0" cellspacing="0">
+                        <tr> 
+                          <!-- HTML Spacer row -->
+                          <td style="font-size: 0; line-height: 0;" height="20">&nbsp;</td>
+                        </tr>
+                      </table></td>
+                  </tr>
+                  <tr> 
+                    <!-- Row container for Intro/ Description -->
+                    <td align="left" style="font-size: 14px; font-style: normal; font-weight: 100; color: #929292; line-height: 1.8; text-align:justify; padding:10px 20px 0px 20px; font-family: sans-serif;">The device’s intended problem to solve is the act of social tracing at schools. The problem being that the track who was where is like a full-time job taking note and gathering the info from many people to connect the dots. The idea was why not have a computer connect the dots because computers can store lots of data with nearly zero human input. How it works it works by scanning cards issued to each student and staff member when every they enter or exit a room or space they tap their card on the device and it saves the card number as being there sending that data to a web based database. Once it is in a data base it can be used for a variety of different uses like traffic modeling or in this case who was where and when this also means that there it is not collected by hand meaning any one given permission could look at it whenever they need to if given permission to view the data.
+						<br>
+					Device specs you have an ESP-8266 connected to power, 3 LEDS, and a RC-522 Board. All of this is in a box approximately 75x45x30 mm (LxWxH). The cost is approximately 10$us including power supply, ESP, RC-522, PCB, Headers, LEDs, 3dprinted case and an adapter you will need one of these per room or area. This however doesn’t include the RFID-cards, cards are approximately 15 to 20 cense a piece when bought I a pack of 200 to 500 but you need one card per staff or student and most if not all staff already have one that would work and in the Richland school district the bus passes also work as well.</td>
+                  </tr>
+                </table></td>
+            </tr>
+            <tr> 
+              <!-- HTML Spacer row -->
+              <td style="font-size: 0; line-height: 0;" height="10"><table width="96%" align="left"  cellpadding="0" cellspacing="0">
+                  <tr>
+                    <td style="font-size: 0; line-height: 0;" height="20">&nbsp;</td>
+                  </tr>
+                </table></td>
+            </tr>
+            <tr>
+              <td><table cellpadding="0" cellspacing="0" align="center" width="84%" style="margin-left:12.5%" class="catalog">
+                  <!-- Table for catalog -->
+                  <tr>
+                    <td ><table class ="responsive-table" width="48%"  cellspacing="0" cellpadding="0" align="left" style="margin: 10px 0px 10px 0px;">
+                        <!-- Table container for each image and description in catalog -->
+                        <tbody>
+                          <tr>
+                            <td><table class="table.responsiveImage" width="66%"  cellspacing="0" cellpadding="0" align="left">
+                                <!-- Table container for image -->
+                                <tbody>
+                                  <tr>
+                                    <td align="center" style="padding:10px 3px 10px 3px;"><img src="images/Starting images/ESP8266.jpg" alt="sample" style="width: 120px;"></td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                              <table class="table.responsiveContent" width="66%"  cellspacing="0" cellpadding="0" align="left">
+                                <!-- Table container for content -->
+                                <tbody>
+                                  <tr>
+                                    <td><p style="font-size: 14px; font-style: normal; font-weight: normal; color: #929292;  padding: 5px 0px 0px 10px;line-height: 1.5em; font-family: sans-serif;">The ESP-8266 is the brains of the operation making the internet connection, processing data from the RC-522 and lighting up LED for user feedback.</p>
+                                      <a href="#" style="text-decoration:none">
+                                      <!--<p style="background-color:#AAAAAA; text-align:center; padding: 10px 10px 10px 10px; margin: 10px 10px 10px 10px;color: #FFFFFF;   font-family: sans-serif; ">Read More</p>-->
+                                      </a></td>
+                                  </tr>
+                                </tbody>
+                              </table></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <table class ="responsive-table" width="48%"  cellspacing="0" cellpadding="0" align="left" style="margin: 10px 0px 10px 0px;">
+                        <!-- Table container for each image and description in catalog -->
+                        <tbody>
+                          <tr>
+                            <td><table class="table.responsiveImage" width="66%"  cellspacing="0" cellpadding="0" align="left">
+                                <!-- Table container for image -->
+                                <tbody>
+                                  <tr>
+                                    <td align="center" style="padding:10px 3px 10px 3px;"><img src="images/Starting images/RFID-RC522.jpg" alt="sample" style="width: 120px;"></td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                              <table class="table.responsiveContent" width="66%"  cellspacing="0" cellpadding="0" align="left">
+                                <!-- Table container for content -->
+                                <tbody>
+                                  <tr>
+                                    <td><p style="font-size: 14px; font-style: normal; font-weight: normal; color: #929292;  padding: 5px 0px 0px 10px;line-height: 1.5em; font-family: sans-serif;">RC-522 is the RFID and NFC communication scanner to read the cards and send the data to the ESP-8266 to be sent to the web-based database.</p>
+                                      <a href="#" style="text-decoration:none">
+                                      <!--<p style="background-color:#AAAAAA; text-align:center; padding: 10px 10px 10px 10px; margin: 10px 10px 10px 10px;color: #FFFFFF;   font-family: sans-serif; ">Read More</p>-->
+                                      </a></td>
+                                  </tr>
+                                </tbody>
+                              </table></td>
+                          </tr>
+                        </tbody>
+                      </table></td>
+                  </tr>
+                  <tr>
+                    <td><table class ="responsive-table" width="48%"  cellspacing="0" cellpadding="0" align="left" style="margin: 10px 0px 10px 0px;">
+                        <!-- Table container for each image and description in catalog -->
+                        <tbody>
+                          <tr>
+                            <td><table class="table.responsiveImage" width="66%"  cellspacing="0" cellpadding="0" align="left">
+                                <!-- Table container for image -->
+                                <tbody>
+                                  <tr>
+                                    <td align="center" style="padding:10px 3px 10px 3px;"><img src="images/Starting images/5mmLED.jpg" alt="sample" style="width: 120px;"></td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                              <table class="table.responsiveContent" width="66%"  cellspacing="0" cellpadding="0" align="left">
+                                <!-- Table container for content -->
+                                <tbody>
+                                  <tr>
+                                    <td><p style="font-size: 14px; font-style: normal; font-weight: normal; color: #929292;  padding: 5px 0px 0px 10px;line-height: 1.5em; font-family: sans-serif;">LED (light Emitting Diodes) Are used to give simple user feedback.</p>
+                                      <a href="#" style="text-decoration:none">
+                                      <!--<p style="background-color:#AAAAAA; text-align:center; padding: 10px 10px 10px 10px; margin: 10px 10px 10px 10px;color: #FFFFFF;   font-family: sans-serif;">Read More</p>-->
+                                      </a></td>
+                                  </tr>
+                                </tbody>
+                              </table></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <table class ="responsive-table" width="48%"  cellspacing="0" cellpadding="0" align="left" style="margin: 10px 0px 10px 0px;">
+                        <!-- Table container for each image and description in catalog -->
+                        <tbody>
+                          <tr>
+                            <td><table class="table.responsiveImage" width="66%"  cellspacing="0" cellpadding="0" align="left">
+                                <!-- Table container for image -->
+                                <tbody>
+                                  <tr>
+                                    <td align="center" style="padding:10px 3px 10px 3px;"><img src="images/Starting images/RFIDcard.jpg" alt="sample" style="width: 120px;"></td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                              <table class="table.responsiveContent" width="66%"  cellspacing="0" cellpadding="0" align="left">
+                                <!-- Table container for content -->
+                                <tbody>
+                                  <tr>
+                                    <td><p style="font-size: 14px; font-style: normal; font-weight: normal; color: #929292;  padding: 5px 0px 0px 10px;line-height: 1.5em; font-family: sans-serif;">RFID card is a cheap card to be caried by the person issued the card to scan on the device at each room.</p>
+                                      <a href="#" style="text-decoration:none">
+                                      <!--<p style="background-color:#AAAAAA; text-align:center; padding: 10px 10px 10px 10px; margin: 10px 10px 10px 10px;color: #FFFFFF;   font-family: sans-serif;">Read More</p>-->
+                                      </a></td>
+                                  </tr>
+                                </tbody>
+                              </table></td>
+                          </tr>
+                        </tbody>
+                      </table></td>
+                  </tr>
+                </table></td>
+            </tr>
+            <tr> 
+              <!-- HTML spacer row -->
+              <td style="font-size: 0; line-height: 0;" height="20"><table width="96%" align="left"  cellpadding="0" cellspacing="0">
+                  <tr>
+                    <td style="font-size: 0; line-height: 0;" height="20">&nbsp;</td>
+                  </tr>
+                </table></td>
+            </tr>
+            <tr bgcolor="#d0cfcf">
+              <td><table class="footer" width="48%"  align="left" cellpadding="0" cellspacing="0">
+                  <!-- First column of footer content -->
+                  <tr>
+                    <td><p align="center"  style="font-size: 22px; font-weight:300; line-height: 2.5em; color: #929292; font-family: sans-serif;">John Lindquist</p>
+                      <p align="center" style="font-size: 12px; color:#929292; text-align:center; font-family: sans-serif;"></p></td>
+                  </tr>
+                </table>
+                <table class="footer" width="48%"  align="left" cellpadding="0" cellspacing="0">
+                  <!-- Second column of footer content -->
+                  <tr>
+                    <td><p style="font-size: 14px; font-style: normal; font-weight:normal; color: #929292; line-height: 1.8; text-align:justify;padding-top:10px; margin-left:20px; margin-right:20px; font-family: sans-serif;">Delta High School Senior Class 2021</p>
+                      <p align="Center" style="font-family: sans-serif;"> <a style="color:#929292; text-decoration:none; padding-left:20px; font-size:14px;" href="https://engineerboy02.github.io/PersonalPortfolio/">Home Page</a> <a style="color:#929292; text-decoration:none; padding-left:20px;  font-size:14px;" href="Contact Page/ContactForm.html">Contact me</a> <!--<a style="color:#929292; text-decoration:none; font-size:14px; padding-left:20px; padding-right:20px; " href="#">Link 3</a>--></p></td>
+                  </tr>
+                </table></td>
+            </tr>
+          </tbody>
+        </table></td>
+    </tr>
+  </tbody>
+</table>
+</body>
+</html>
